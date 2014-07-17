@@ -21,11 +21,12 @@ class MainHandler(webapp2.RequestHandler):
 <label>Last Name</label><input type="text" name="last" /><br>
 <input type="checkbox" name= "car" value="Car Loan" />Car Loan<br>
 
-<select>
-  <option vale="one">$500 - $1000</option>
-  <option value="two">$2000 - $3000</option>
-  <option value="three">$3000 - $4000</option>
+<select name="small_loan">
+  <option  value="$500 - $1000" >$500 - $1000</option>
+    <option  value="$1000 - $2000" >$1000 - $2000</option>
+        <option  value="$2000 - $3000" >$2000 - $3000</option>
 </select>
+
 <input type="submit" value="submit" />
 
 
@@ -41,9 +42,9 @@ class MainHandler(webapp2.RequestHandler):
             first_name = self.request.GET['first']
             last_name = self.request.GET['last']
             car_loan = self.request.GET['car']
-            # option_two = self.request.GET['two']
-            # option_three = self.request.GET['three']
-            self.response.write(first_name + last_name + car_loan)
+            drop = self.request.GET['small_loan']
+            # drop_two = self.request.GET['small_loanTwo']
+            self.response.write(first_name + last_name + car_loan + drop)
         else:
             self.response.write(page_head + page_body + page_close)
 
