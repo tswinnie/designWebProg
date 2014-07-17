@@ -26,16 +26,16 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1155">
+            <state line="52" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Lab 2 Server Side Form/Lab 2 Server Side Form/main.py">
+        <entry file="file://$PROJECT_DIR$/../Lab 2 Server Side Form/lab2-formAssignment/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.33733132" vertical-offset="0" max-vertical-offset="667">
+            <state line="7" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.15742129" vertical-offset="0" max-vertical-offset="667">
               <folding />
             </state>
           </provider>
@@ -54,6 +54,7 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/../simpleLogin/simple-login/main.py" />
         <option value="$PROJECT_DIR$/../Lab 2 Server Side Form/Lab 2 Server Side Form/main.py" />
+        <option value="$PROJECT_DIR$/../Lab 2 Server Side Form/lab2-formAssignment/main.py" />
       </list>
     </option>
   </component>
@@ -89,7 +90,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -110,6 +110,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,7 +273,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="790" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -305,11 +306,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../simpleLogin/simple-login/main.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="63" selection-end="63" vertical-scroll-proportion="0.089955024" vertical-offset="0" max-vertical-offset="667">
+        <state line="52" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lab 2 Server Side Form/lab2-formAssignment/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../simpleLogin/simple-login/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="63" selection-end="63" vertical-scroll-proportion="0.089955024" vertical-offset="0" max-vertical-offset="667" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
@@ -319,9 +332,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Lab 2 Server Side Form/Lab 2 Server Side Form/main.py">
+    <entry file="file://$PROJECT_DIR$/../Lab 2 Server Side Form/lab2-formAssignment/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.33733132" vertical-offset="0" max-vertical-offset="667">
+        <state line="7" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.15742129" vertical-offset="0" max-vertical-offset="667">
           <folding />
         </state>
       </provider>
