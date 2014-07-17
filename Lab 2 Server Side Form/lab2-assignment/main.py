@@ -47,7 +47,7 @@ class MainHandler(webapp2.RequestHandler):
             # option_one = self.request.GET['one']
             # option_two = self.request.GET['two']
             # option_three = self.request.GET['three']
-            self.response.write(page_head + page_body + first_name + last_name + page_close)
+            self.response.write(first_name + last_name)
         else:
             self.response.write(page_head + page_body + page_close)
 
