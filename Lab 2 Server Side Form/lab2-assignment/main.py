@@ -16,7 +16,7 @@ class MainHandler(webapp2.RequestHandler):
 <title></title>'''
         page_body = '''
 <body>
-<form method ="GET">
+<form method ="GET" action="">
 <label>First Name</label><input type="text" name="first" />
 <label>Last Name</label><input type="text" name="last" />
 <input type="checkbox" name="personal" value="Bike">Personal Loan<br>
@@ -38,19 +38,16 @@ class MainHandler(webapp2.RequestHandler):
 </body>
 </html>
         '''
-
-
-
         if self.request.GET:
             first_name = self.request.GET['first']
             last_name = self.request.GET['last']
-            personal = self.request.GET['personal']
-            car = self.request.GET['car']
-            home = self.request.GET['home']
-            option_one = self.request.GET['one']
-            option_two = self.request.GET['two']
-            option_three = self.request.GET['three']
-            self.response.write(first_name + last_name + personal + car + home + option_one + option_two + option_three)
+            # personal = self.request.GET['personal']
+            # car = self.request.GET['car']
+            # home = self.request.GET['home']
+            # option_one = self.request.GET['one']
+            # option_two = self.request.GET['two']
+            # option_three = self.request.GET['three']
+            self.response.write(page_head + page_body + page_close)
         else:
             self.response.write(page_head + page_body + page_close)
 
