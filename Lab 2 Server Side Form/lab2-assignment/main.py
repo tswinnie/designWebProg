@@ -51,7 +51,7 @@ class MainHandler(webapp2.RequestHandler):
             car_loan = self.request.GET['car']
             drop = self.request.GET['small_loan']
             loan = self.request.GET['loan_date']
-            self.response.write(first_name + last_name + car_loan + drop + loan)
+            self.response.write(first_name + '' + last_name + '' + car_loan + '' + drop + '' + loan)
         else:
             self.response.write(page_head + page_body + page_close)
 
