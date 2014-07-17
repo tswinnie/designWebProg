@@ -17,28 +17,113 @@ class MainHandler(webapp2.RequestHandler):
         page_head = '''<!DOCTYPE HTML>
 <html>
 <head>
-<title></title>'''
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body{
+background: #1abc9c;
+font-family: 'Lato', sans-serif;
+}
+
+.container{
+
+width: 980px;
+margin: 0 auto;
+
+
+}
+
+form {
+margin: 0 auto;
+width: 348px;
+background: #e74c3c;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 1px 1px 1px 1px #c0392b;
+}
+
+input{
+border: none;
+width: 335px;
+height: 48px;
+border-radius: 5px;
+background: #ecf0f1;
+margin: 6px;
+font-size: 16px;
+font-weight: bold;
+}
+
+select{
+order: none;
+width: 335px;
+height: 48px;
+border-radius: 5px;
+background: #ecf0f1;
+margin: 6px;
+font-size: 16px;
+font-weight: bold;
+}
+
+#submit{
+
+background: #2980b9;
+color: #fff;
+cursor:pointer;
+}
+
+#submit:hover{
+
+background: #3498db;
+color: #fff;
+
+}
+
+#titleText{
+
+width: 364px;
+font-size: 32px;
+font-weight: 300;
+color: #fff;
+
+}
+
+#confirmation {
+text-align: center;
+height: 82px;
+background: #ecf0f1;
+margin-bottom: -50px;
+border-radius: 5px;
+}
+
+
+
+</style>
+'''
         page_body = '''
 <body>
+<div class="container">
 <form method ="GET" action="">
-<label>First Name</label><input type="text" name="first" />
-<label>Last Name</label><input type="text" name="last" /><br>
-<label>Car Loan</label><input type="checkbox" name= "car" value="Car Loan" />
+<h2 id="titleText">Get Your Car Loan Today!</h2>
+<label>First Name:</label><input type="text" name="first" /><br>
+<label>Last Name:</label><input type="text" name="last" /><br>
 
 
-<select name="small_loan">
+<label>How Much:</label><select name="small_loan">
   <option  value="$500 - $1000" >$500 - $1000</option>
     <option  value="$1000 - $2000" >$1000 - $2000</option>
         <option  value="$2000 - $3000" >$2000 - $3000</option>
 </select>
-
-<select name="loan_date">
+<br>
+<label>How Long:</label><select name="loan_date">
   <option  value="30 days - 60 days" >30 days - 60 days</option>
     <option  value="60 days - 90 days" >60 days - 90 days</option>
-        <option  value="90 days - 120 days" >90 days - 120 days/option>
+        <option  value="90 days - 120 days" >90 days - 120 days</option>
 </select>
+<label>Car Loan:</label><input type="checkbox" name= "car" value="Car Loan" style="margin-top: -9px;" /><br>
 
-<input type="submit" value="submit" />
+<br>
+<input id="submit" type="submit" value="submit" />
+<h3 id="confirmation">Your Confirmation</h3>
 
 
 
@@ -46,6 +131,7 @@ class MainHandler(webapp2.RequestHandler):
         '''
         page_close = '''
 </form>
+</div>
 </body>
 </html>
         '''
