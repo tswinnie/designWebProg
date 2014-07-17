@@ -10,6 +10,10 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
+        # Create the page so that I can create a form
+        # create the form inside the html code like I normally would in an HTML document
+
         page_head = '''<!DOCTYPE HTML>
 <html>
 <head>
@@ -45,14 +49,17 @@ class MainHandler(webapp2.RequestHandler):
 </body>
 </html>
         '''
+        # I am going to store the information that are collected from the user into a variable
         if self.request.GET:
-            first_name = self.request.GET['first']
-            last_name = self.request.GET['last']
-            car_loan = self.request.GET['car']
-            drop = self.request.GET['small_loan']
-            loan = self.request.GET['loan_date']
-            self.response.write(page_head + page_body + first_name + ' '  '\n' + last_name + ' ' + '\n' + car_loan + '\n' + ' ' + '\n' + drop + ' ' + loan + '\n' + page_close)
+            first_name = self.request.GET['first']  # this gets the value for the first name
+            last_name = self.request.GET['last']  # this gets the last name value
+            car_loan = self.request.GET['car']  # this gets the car loan check box value
+            drop = self.request.GET['small_loan']  # this gets the drop down selection value
+            loan = self.request.GET['loan_date']  # this gets the days for the loan value drop down
+            # return the values that the user put in the form after the submit button
+            self.response.write(page_head + page_body + first_name + ' ' + last_name + ' ' + car_loan + ' ' + drop + ' ' + loan + page_close)
         else:
+            # if the user does not input any values then do this
             self.response.write(page_head + page_body + page_close)
 
 
