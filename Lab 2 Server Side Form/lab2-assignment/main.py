@@ -40,6 +40,7 @@ background: #e74c3c;
 padding: 20px;
 border-radius: 8px;
 box-shadow: 1px 1px 1px 1px #c0392b;
+height: 655px;
 }
 
 input{
