@@ -18,14 +18,13 @@ class MainHandler(webapp2.RequestHandler):
 <body>
 <form method ="GET" action="">
 <label>First Name</label><input type="text" name="first" />
-<label>Last Name</label><input type="text" name="last" />
-<input type="checkbox" name="personal" value="Bike">Personal Loan<br>
-<input type="checkbox" name="car" value="car">Car Loan<br>
-<input type="checkbox" name="home" value="home">Home Loan<br>
+<label>Last Name</label><input type="text" name="last" /><br>
+<input type="checkbox" name= "car" value="Car Loan" />Car Loan<br>
+
 <select>
-  <option name="one">$500 - $1000</option>
-  <option name="two">$2000 - $3000</option>
-  <option name="three">$3000 - $4000</option>
+  <option vale="one">$500 - $1000</option>
+  <option value="two">$2000 - $3000</option>
+  <option value="three">$3000 - $4000</option>
 </select>
 <input type="submit" value="submit" />
 
@@ -41,13 +40,10 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             first_name = self.request.GET['first']
             last_name = self.request.GET['last']
-            # personal = self.request.GET['personal']
-            # car = self.request.GET['car']
-            # home = self.request.GET['home']
-            # option_one = self.request.GET['one']
+            car_loan = self.request.GET['car']
             # option_two = self.request.GET['two']
             # option_three = self.request.GET['three']
-            self.response.write(first_name + last_name)
+            self.response.write(first_name + last_name + car_loan)
         else:
             self.response.write(page_head + page_body + page_close)
 
