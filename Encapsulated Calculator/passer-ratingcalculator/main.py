@@ -62,11 +62,11 @@ class QBR(object):  # created class that will hold the data for five players
         self.yards = 0  # this is the yards gained value
         self.touchdowns = 0  # this is the number of touchdowns value
         self.interceptions = 0  # this is the interceptions by the quarterback
-        self.__rating_ = 90  # this my private variable
+        self.passer_ratings = 90  # this my private variable
 
     @property
     def passer_rating(self):
-        return self.__rating_
+        return self.__passer_ratings
 
 
 
