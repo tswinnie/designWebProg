@@ -12,14 +12,14 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello world!')
 
-class QBR(object):
+class QBR(object):  # created class that will hold the data for five players
     def __int__(self):
-        self.passing = 0
-        self.completion = 0
-        self.yards = 0
-        self.touchdowns = 0
-        self.interceptions = 0
-        self.__rating__ = 0
+        self.passing = 0  # this is the passing value
+        self.completion = 0  # this is the completion value
+        self.yards = 0  # this is the yards gained value
+        self.touchdowns = 0  # this is the number of touchdowns value
+        self.interceptions = 0  # this is the interceptions by the quarterback
+        self.__rating__ = 0  # this my private variable
 
 
 
