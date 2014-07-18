@@ -10,7 +10,17 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+
+        #  create instance of my QBR object
+        matt = QBR()
+        matt.passing = 200
+        matt.completion = 180
+        matt.yards = 1000
+        matt.touchdowns = 100
+        matt.interceptions = 3
+        
+
+
 
 class QBR(object):  # created class that will hold the data for five players
     def __int__(self):
